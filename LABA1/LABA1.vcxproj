@@ -129,9 +129,11 @@
   <ItemGroup>
     <ClCompile Include="LABA1.cpp" />
     <ClCompile Include="Product.cpp" />
+    <ClCompile Include="Tabl.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Product.h" />
+    <ClInclude Include="Tabl.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
