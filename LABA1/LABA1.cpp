@@ -4,7 +4,7 @@ using namespace std;
 #include "Tabl.h"
 Product b, b2;
 Product* buf = &b, * buf2 = &b2;
-Tabl t(5);
+Tabl t(3);
 int main()
 {
 	char c, endline;
@@ -19,6 +19,7 @@ int main()
 		cout << "5-remove" << endl;
 		cout << "6-replace" << endl;
 		cout << "7-sort" << endl;
+		cout << "8-insert" << endl;
 		cin.get(c);
 		cin.get(endline);
 		switch (c)
@@ -78,6 +79,13 @@ int main()
 		case '7':
 		{
 			t.sort();
+			break;
+		}
+		case '8':
+		{
+			cout << "input element for insert" << endl;
+			buf->input();
+			T* i = t.insert(buf);
 			break;
 		}
 		}

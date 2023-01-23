@@ -14,6 +14,9 @@ int Tabl::getSize() { return size; }
 T* Tabl::insert(const T& item){
 	if (length() < size)
 		*cur++ = item->copy();
+	else {
+		*cur++ = item->copy();
+	}
 	return cur;
 }
 T* Tabl::erase(T* pos){
